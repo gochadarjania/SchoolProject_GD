@@ -2,7 +2,7 @@
 
 namespace SchoolProject_GD.Migrations
 {
-    public partial class Test_001 : Migration
+    public partial class Fist : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

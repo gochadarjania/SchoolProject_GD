@@ -29,7 +29,7 @@ namespace SchoolProject_GD.Domain
         public int StudentAge { get; set; }
 
         [Required]
-        public Gender StudentGender { get; set; }
+        public int StudentGender { get; set; }
         public virtual ICollection<StudentSubject> StudentSubjects { get; set; }
 
     }

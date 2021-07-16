@@ -8,7 +8,7 @@ namespace SchoolProject_GD.Domain.Interfaces.Repository
 {
     public interface ISubjectRepository
     {
-        public void AddStudent(Subject subject);
+        public void AddSubject(Subject subject);
         public void Save();
     }
 }

@@ -55,7 +55,46 @@ namespace SchoolProject_GD.Repository
 
             return studentSubjects;
         }
-        
+        public List<StudentSubject> GetStudentPoint(int personalId, string subjectName)
+        {
+            List<StudentSubject> studentSubjects = new List<StudentSubject>();
+
+            foreach (var item in _context.StudentSubjects)
+            {
+                if (item.StudentPersonalId == personalId && item.SubjectName == subjectName)
+                {
+                    studentSubjects.Add(item);
+                }
+            }
+
+            return studentSubjects;
+        }
+        public List<StudentSubject> GetStudentPoint(string subjectName)
+        {
+            List<StudentSubject> studentSubjects = new List<StudentSubject>();
+
+            foreach (var item in _context.StudentSubjects)
+            {
+                if (item.SubjectName == subjectName)
+                {
+                    studentSubjects.Add(item);
+                }
+            }
+
+            return studentSubjects;
+        }
+        public List<StudentSubject> GetStudentPoint()
+        {
+            List<StudentSubject> studentSubjects = new List<StudentSubject>();
+
+            foreach (var item in _context.StudentSubjects)
+            {
+                    studentSubjects.Add(item);
+            }
+
+            return studentSubjects;
+        }
+
         public void Save()
         {
             _context.SaveChanges();

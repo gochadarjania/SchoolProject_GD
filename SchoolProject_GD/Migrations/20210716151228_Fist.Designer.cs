@@ -10,8 +10,8 @@ using SchoolProject_GD.Repository;
 namespace SchoolProject_GD.Migrations
 {
     [DbContext(typeof(SchoolDbContext))]
-    [Migration("20210712214743_Test_001")]
-    partial class Test_001
+    [Migration("20210716151228_Fist")]
+    partial class Fist
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

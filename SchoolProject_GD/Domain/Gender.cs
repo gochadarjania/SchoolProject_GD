@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SchoolProject_GD.Domain
 {
-    public enum Gender
+    public enum Gender : byte
     {
         Male = 1,
         Female = 2

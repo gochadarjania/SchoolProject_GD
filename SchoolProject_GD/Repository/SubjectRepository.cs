@@ -16,7 +16,7 @@ namespace SchoolProject_GD.Repository
             _context = context;
         }
 
-        public void AddStudent(Subject subject)
+        public void AddSubject(Subject subject)
         {
             _context.Subjects.Add(subject);
             Save();
